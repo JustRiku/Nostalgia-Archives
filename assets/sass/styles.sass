@@ -67,15 +67,96 @@ body
     .ad2
         margin: 10px 600px
         width: 30%
+
 .grid
     display: grid
     width: 80%
     margin: 0 auto
     grid-template-columns: repeat(3,1fr)
     grid-gap: 10px
+    margin-bottom: 50px
     .griditem
         width: 100%
         height: 400px
-        background-color: $arrow-color
-    .item2
+        // background-color: $arrow-color
+        overflow: hidden
+        &:hover > .gridimg
+            transform: scale(1.1)
+            filter: blur(2px)
+        .gridimg
+            object-fit: cover
+            width: 100%
+            height: 100%
+            transition: .3s ease-in-out
+            cursor: pointer
+    .item2, .item3
         grid-column: span 2
+
+.flex
+    display: flex
+    width: 80%
+    margin: 0 auto
+    div
+        .ad3
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .flexsection
+        height: 100%
+        width: 80%
+        margin-right: 10px
+        .flexarticle
+            display: flex
+            height: 200px
+            overflow: hidden
+            margin: 10px 0
+            border: 2px solid white
+            transition: .3s ease-in-out
+            &:hover
+                background-color: #000000
+                border-color: $arrow-color
+            .fleximg
+                width: 100%
+                height: 100%
+                img
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+            .textarticle
+                padding: 10px
+                .articletitle
+                    font-weight: 900
+                    font-size: 35px
+                    padding-bottom: 4px
+                    line-height: 35px
+                .author
+                    color: white
+                    padding-bottom: 20px
+                .description
+                    color: white
+        .flex2, .flex4, .flex6
+            flex-direction: row-reverse
+        .flex1
+            .textarticle
+                .articletitle
+                    color: $pink
+        .flex2
+            .textarticle
+                .articletitle
+                    color: $green
+        .flex3
+            .textarticle
+                .articletitle
+                    color: $purple
+        .flex4
+            .textarticle
+                .articletitle
+                    color: $blue
+        .flex5
+            .textarticle
+                .articletitle
+                    color: $orange
+        .flex6
+            .textarticle
+                .articletitle
+                    color: $yellow

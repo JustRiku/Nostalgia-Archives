@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "img": "assets/img/britney3.jpg",
+        "title": "Moda en los 2000",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    },
+    {
+        "id": "2",
+        "img": "assets/img/manos-hulk.png",
+        "title": "Juguetes icónicos de los 2000",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    },
+    {
+        "id": "3",
+        "img": "assets/img/killbill.jpeg",
+        "title": "Algunas de las mejores películas de la década",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    },
+    {
+        "id": "4",
+        "img": "assets/img/cod.jpg",
+        "title": "Los videojuegos que marcaron la década",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    },
+    {
+        "id": "5",
+        "img": "assets/img/m&m.jpg",
+        "title": "La Música de los 2000",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    },
+    {
+        "id": "6",
+        "img": "assets/img/knd.jpg",
+        "title": "Dibujos de tu infancia",
+        "author": "by <span style=\"color:#FF265A\" >Autor</span> | Enero 2022",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit odio erat, neque enim imperdiet pharetra duis natoque porttitor primis. Sociosqu faucibus taciti magna interdum euismod quis, potenti feugiat vel turpis arcu."
+    }
+]

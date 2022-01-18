@@ -1,0 +1,30 @@
+[
+    {
+        "id": "1",
+        "img": "assets/img/moda.jpg"
+    },
+    {
+        "id": "2",
+        "img": "assets/img/moda2000.png"
+    },
+    {
+        "id": "3",
+        "img": "assets/img/britney.png"
+    },
+    {
+        "id": "4",
+        "img": "assets/img/zapatos.png"
+    },
+    {
+        "id": "5",
+        "img": "assets/img/cartoons.jpg"
+    },
+    {
+        "id": "6",
+        "img": "assets/img/nfs.jpg"
+    },
+    {
+        "id": "7",
+        "img": "assets/img/apsycho.jpg"
+    }
+]
