@@ -20,6 +20,11 @@ body {
   background: url(../img/fondo3.png);
 }
 
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .header {
   background: url(../img/back-header.png);
   background-repeat: no-repeat;
@@ -39,6 +44,8 @@ body {
   background-color: black;
   height: 50px;
   margin: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar .menu {
@@ -46,6 +53,7 @@ body {
   align-items: center;
   font-size: 20px;
   font-weight: 600;
+  background-color: black;
 }
 
 .navbar .menu .menuitem {
@@ -111,7 +119,7 @@ body {
 
 .grid .griditem:hover > .gridimg {
   transform: scale(1.1);
-  filter: blur(2px);
+  filter: grayscale(50%);
 }
 
 .grid .griditem .gridimg {
@@ -130,6 +138,7 @@ body {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .flex div .ad3 {
@@ -187,6 +196,7 @@ body {
 
 .flex .flexsection .flexarticle .textarticle .description {
   color: white;
+  font-size: 20px;
 }
 
 .flex .flexsection .flex2, .flex .flexsection .flex4, .flex .flexsection .flex6 {
@@ -215,5 +225,158 @@ body {
 
 .flex .flexsection .flex6 .textarticle .articletitle {
   color: #FBFF2F;
+}
+
+.dynamic {
+  flex-direction: column-reverse;
+}
+
+.dynamic .flexsection {
+  width: 100%;
+}
+
+.dynamic .dynamicflex {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.dynamic .dynamicflex img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.dynamic .dynamicflex .textarticle {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+.dynamic .dynamicflex .textarticle .articletitle {
+  font-weight: 900;
+  font-size: 35px;
+  padding: 4px;
+  line-height: 35px;
+}
+
+.dynamic .dynamicflex .textarticle .author {
+  padding-bottom: 20px;
+}
+
+.dynamic .dynamicflex .textarticle .description {
+  font-size: 20px;
+}
+
+.hamburgermenu {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  transition: .3s ease-in-out;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  background-color: black;
+}
+
+.hamburgermenu:hover {
+  border-color: #FF265A;
+}
+
+.hamburgermenu .arrow {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: .3s ease-in-out;
+}
+
+.hamburgermenu:hover > .arrow {
+  transform: rotate(180deg);
+}
+
+.hamburgermenu:hover > .arrow:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header .logo {
+    width: 50%;
+  }
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+  }
+  .navbar .menu .menuitem .arrow {
+    width: 10%;
+  }
+  .hamburgermenu {
+    display: block;
+  }
+  .navbar .show {
+    display: flex;
+    width: 20%;
+  }
+  .ads {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ads .ad1 {
+    height: 200px;
+    width: 100%;
+  }
+  .ads .ad2 {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .grid {
+    width: 100%;
+  }
+  .flex {
+    width: 100%;
+    flex-direction: column;
+  }
+  .flex div {
+    height: 300px;
+  }
+  .flex div .ad3 {
+    object-position: 50% 100%;
+  }
+  .flex .flexsection {
+    width: 100%;
+  }
+  .flex .flexsection .flexarticle .textarticle .articletitle {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .flex .flexsection .flexarticle .textarticle .author {
+    padding-bottom: 10px;
+  }
+  .flex .flexsection .flexarticle .textarticle .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .header .logo {
+    width: 100%;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .grid .griditem {
+    height: 200px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
