@@ -227,15 +227,15 @@ main {
   color: #FBFF2F;
 }
 
-.dynamic {
+#dynamic {
   flex-direction: column-reverse;
 }
 
-.dynamic .flexsection {
+#dynamic .flexsection {
   width: 100%;
 }
 
-.dynamic .dynamicflex {
+#dynamic .dynamicflex {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -243,29 +243,29 @@ main {
   overflow: hidden;
 }
 
-.dynamic .dynamicflex img {
+#dynamic .dynamicflex img {
   width: 50%;
   object-fit: cover;
 }
 
-.dynamic .dynamicflex .textarticle {
+#dynamic .dynamicflex .textarticle {
   background-color: white;
   padding: 20px;
   width: 100%;
 }
 
-.dynamic .dynamicflex .textarticle .articletitle {
+#dynamic .dynamicflex .textarticle .articletitle {
   font-weight: 900;
   font-size: 35px;
   padding: 4px;
   line-height: 35px;
 }
 
-.dynamic .dynamicflex .textarticle .author {
+#dynamic .dynamicflex .textarticle .author {
   padding-bottom: 20px;
 }
 
-.dynamic .dynamicflex .textarticle .description {
+#dynamic .dynamicflex .textarticle .description {
   font-size: 20px;
 }
 

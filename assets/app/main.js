@@ -20,7 +20,6 @@ fetch('assets/data/data.json')
 });
 
 let openArticle = (e) => {
-    let articleSel = datos[Number(e.currentTarget.id)];
     window.open(`../article.html?id=${e.currentTarget.id}`, '_blank');
 }
 
@@ -48,26 +47,12 @@ fetch('assets/data/data2.json')
 .then(() => {
     let articles2 = document.querySelectorAll(".flexarticle");
     articles2.forEach((item) => {
-        item.addEventListener('click', openArticle2, true)
+        item.addEventListener('click', openArticle, true)
     })
 });
 
 
 let dynamic = document.querySelector(".dynamic");
-
-let openArticle2 = (e) => {
-    // let articleSel = datos2[Number(e.currentTarget.id)];
-    // dynamic.innerHTML= `
-    // <div class="dynamicflex">
-    //     <img src="${articleSel.img}" alt="dynamicimg" />
-    //     <div class="textarticle">
-    //         <h2 class="articletitle">${articleSel.title}</h2>
-    //         <p class="author">${articleSel.author}</p>
-    //         <p class="description">${articleSel.description}</p>
-    //     </div>
-    // </div>`
-    window.open(`../article.html?id=${e.currentTarget.id}`, '_blank');
-}
 
 let hamburger = document.getElementById("hamburger");
 let navbar = document.getElementById("nav-ul");
@@ -75,12 +60,3 @@ let navbar = document.getElementById("nav-ul");
 hamburger.addEventListener('click', () => {
     navbar.classList.toggle('show');
 })
-
-let obtenerParam = (url) => {
-    let urlParam = String(url.match(/\?+.+/));
-    urlParam = urlParam.replace("?id=", "");
-    return urlParam;
-}
-
-let param = obtenerParam(document.URL);
-
