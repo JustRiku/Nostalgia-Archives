@@ -75,3 +75,12 @@ let navbar = document.getElementById("nav-ul");
 hamburger.addEventListener('click', () => {
     navbar.classList.toggle('show');
 })
+
+let obtenerParam = (url) => {
+    let urlParam = String(url.match(/\?+.+/));
+    urlParam = urlParam.replace("?id=", "");
+    return urlParam;
+}
+
+let param = obtenerParam(document.URL);
+
