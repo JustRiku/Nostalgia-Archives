@@ -20,7 +20,7 @@ fetch('assets/data/data.json')
 });
 
 let openArticle = (e) => {
-    window.open(`../article.html?id=${e.currentTarget.id}`, '_blank');
+    window.open(`article.html?id=${e.currentTarget.id}`, '_blank');
 }
 
 let datos2;
